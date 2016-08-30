@@ -11,4 +11,39 @@
  * It is generally better to create a new file per style scope.
  *
  */
-@import "bootstrap";
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+ .navbar {
+   margin-bottom: 0;
+   border: 0px;
+   border-radius: 0px;
+ }
+ .home {
+   height: 500px;
+   background-image: image-url("Home-Hero-Image.jpg");
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: center center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   -o-background-size: cover;
+   text-align: center;
+   color: white;
+ }
+ .spidr {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+ .main_container {
+   flex: 1;
+ }
+ .section {
+   min-height: 100px;
+ }
+ .gray {
+   background-color: #ddd;
+ }
