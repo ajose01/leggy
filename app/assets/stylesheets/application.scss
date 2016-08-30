@@ -40,9 +40,11 @@
  }
  .main_container {
    flex: 1;
+   display: flex;
+   flex-direction: column;
  }
- .section {
-   min-height: 100px;
+ .flex-container {
+   flex: 1;
  }
  .gray {
    background-color: #ddd;
