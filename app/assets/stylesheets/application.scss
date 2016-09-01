@@ -114,7 +114,7 @@
     border-radius: 50%;
   }
  .gray {
-   background-color: #d9d9d9;
+   background-color: #e6eaf2;
  }
  .italic-text {
    font-style: italic;
@@ -207,6 +207,7 @@ header .intro-button {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 .services-offered > div {
   max-width: 500px;
@@ -215,7 +216,7 @@ header .intro-button {
 }
 .services-screen {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
 }
 .intro-button {
@@ -243,6 +244,33 @@ header .intro-button {
   margin-top:15px;
   margin-left:10px;
   margin-right:3px;
+}
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.subscribe-input {
+  max-width: 80%;
+  margin-top: 15px;
+}
+.subscribe-input .input-group {
+  display: flex;
+}
+.subscribe-input .fa-paper-plane {
+  padding: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 3px;
+  color: #acb2bf;
+}
+.subscribe-input button {
+  border-radius: 0px 5px 5px 0px;
+}
+.subscribe-input input {
+  font-style: italic;
 }
 // li a {
 //   padding: 20px 30px;
@@ -295,5 +323,8 @@ header .intro-button {
   }
   .services-offered {
     flex-direction: column;
+  }
+  .subscribe-input input {
+    font-size: 10px;
   }
 }
