@@ -6,28 +6,28 @@
 
 @font-face {
   font-family: 'Lato-Light';
-  src: url('/assets/Lato-Light.eot') format('embedded-opentype');
+  src: font-url('/assets/Lato-Light.eot') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lato-Light';
-  src:  url('/assets/Lato-Light.woff') format('woff'), url('/assets/Lato-Light.ttf')  format('truetype'), url('/assets/Lato-Light.svg#Lato-Light') format('svg');
+  src:  font-url('/assets/Lato-Light.woff') format('woff'), font-url('/assets/Lato-Light.ttf')  format('truetype'), font-url('/assets/Lato-Light.svg#Lato-Light') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lato-Regular';
-  src: url('/assets/Lato-Regular.eot') format('embedded-opentype');
+  src: font-url('/assets/Lato-Regular.eot') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lato-Regular';
-  src:  url() format('/assets/Lato-Regular.woff'), url('/assets/Lato-Regular.ttf')  format('truetype'), url('/assets/Lato-Regular.svg#Lato-Regular') format('svg');
+  src:  font-url('/assets/Lato-Regular.woff') format('woff'), font-url('/assets/Lato-Regular.ttf')  format('truetype'), font-url('/assets/Lato-Regular.svg#Lato-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -60,14 +60,14 @@ body {	font-family: 'Lato-Light';  font-size:20px; color:#646466;}
 .navbar-brand img{ max-width:200px; margin-top:20px;}
 .navbar-default{ background:none; border:none; margin:0px;}
 .navbar-nav>li>a { padding:55px 15px; color:#969699; font-size:20px;}
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{ color:#003754 !important; background:#FFF url(pagination.png)no-repeat center top !important; font-weight:bold;}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{ color:#003754 !important; background:#FFF url(<%= asset_path "pagination.png" %>)no-repeat center top !important; font-weight:bold;}
 header{border-top:10px solid #003754; background:#FFF;}
 .navbar-nav>li:last-child>a, .navbar-nav>li:last-child>a:hover { padding:5px 15px 8px; color:#f22800; border-radius:5px; margin-top:50px; font-weight:bolder; border:1px solid #f22800;}
 button[aria-expanded="true"] i {display:none;}
 .mobbtn{display:none;}
 
 /*Home banner */
-.banner { background:url(banner.jpg)no-repeat center; background-size:cover; padding:150px 0 90px; text-align:center;}
+.banner { background:url(<%= asset_path "banner.jpg" %>)no-repeat center; background-size:cover; padding:150px 0 90px; text-align:center;}
 .banner a{ background:#f22800; padding:20px 45px; border-radius:5px; color:#FFF;}
 .banner img{ display:block; margin:0 auto;}
 .banner p { font-size:35px; color:#FFF; padding:15px 0 100px; font-family: 'Lato-Regular';}
@@ -96,7 +96,7 @@ button[aria-expanded="true"] i {display:none;}
 
 /*home subscription*/
 .subscription{text-align:center; padding:30px 0 50px; background:#e6eaf2;}
-.subscription form{max-width:560px; padding-left:60px; background:url(send.png)no-repeat left center; margin:30px auto 0;}
+.subscription form{max-width:560px; padding-left:60px; background:url(<%= asset_path "send.png" %>)no-repeat left center; margin:30px auto 0;}
 .subscription form input[type="submit"]{width:150px; border-top-right-radius:5px; border-bottom-right-radius:5px; border:none; height:50px; line-height:50px; color:#FFF; background:#006da6; }
 .subscription form input[type="email"]{width:calc(100% - 150px); border-top-left-radius:5px; border-bottom-left-radius:5px; padding-left:15px; border:none; height:50px; line-height:50px; font-style:italic; float:left;}
 
@@ -121,11 +121,11 @@ button[aria-expanded="true"] i {display:none;}
 .footer .social ul {margin: 0 auto; display:table; margin-top:30px;}
 
 /* careers page */
-.banner2 { background:url(careersbanner.jpg)no-repeat center; background-size:cover; padding:150px 0 90px; text-align:center;}
+.banner2 { background:url(<%= asset_path "careersbanner.jpg" %>)no-repeat center; background-size:cover; padding:150px 0 90px; text-align:center;}
 .career.section1{padding-bottom:125px;}
 
 /* company page*/
-.company.banner{background:url(company.jpg)no-repeat center; background-size:cover; padding:110px 0; text-align:center;}
+.company.banner{background:url(<%= asset_path "company.jpg" %>)no-repeat center; background-size:cover; padding:110px 0; text-align:center;}
 .company .wrapper h1{ color:#FFF; font-weight:bolder;}
 .company .wrapper span{ color:#FFF;}
 .company .top h1{border:none; color:#000; max-width:625px; margin:0 auto;}
@@ -152,7 +152,7 @@ button[aria-expanded="true"] i {display:none;}
 .learn-more ul li a i{ color:#f22800;}
 
 /* contact page */
-.banner2 { background:url(contact.jpg)no-repeat center; background-size:cover; padding:150px 0 90px; text-align:center;}
+.banner2 { background:url(<%= asset_path "contact.jpg" %>)no-repeat center; background-size:cover; padding:150px 0 90px; text-align:center;}
 .page_title{text-align:center; background:#FFF; padding:50px 0;}
 .page_title i{font-size:40px;}
 .page_title h2{margin-top:10px; font-weight:bolder;}
