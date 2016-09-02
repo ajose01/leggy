@@ -19,19 +19,19 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li>
+            <li class="<%= 'active' if params["id"] == "index" %>">
               <a href="/index">Home</a>
             </li>
-            <li>
+            <li class="<%= 'active' if params["id"] == "product" %>">
               <a href="/product">Product</a>
             </li>
-            <li>
+            <li class="<%= 'active' if params["id"] == "company" %>">
               <a href="/company">Company</a>
             </li>
-            <li>
+            <li class="<%= 'active' if params["id"] == "careers" %>">
               <a href="/careers">Careers</a>
             </li>
-            <li>
+            <li class="<%= 'active' if params["id"] == "contact" %>">
               <a href="/contact">Contact</a>
             </li>
             <li>
@@ -44,10 +44,3 @@
     </nav>
   </div>
 </header>
-<script>
-  $(document).ready(function () {
-    $.each($('.nav').find('li'), function () {
-      $(this).toggleClass('active', window.location.pathname.indexOf($(this).find('a').attr('href')) > -1);
-    });
-  });
-</script>
