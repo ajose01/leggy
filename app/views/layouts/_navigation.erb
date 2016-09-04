@@ -35,7 +35,7 @@
               <a href="/contact">Contact</a>
             </li>
             <li>
-              <a href="#">Request Demo</a>
+              <a href="#" data-toggle="modal" data-target="#demoModal">Request Demo</a>
             </li>
 
           </ul>
@@ -44,3 +44,29 @@
     </nav>
   </div>
 </header>
+
+<!-- Request Demo Modal -->
+<div class="modal fade" id="demoModal" tabindex="-1" role="dialog" aria-labelledby="demoModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="demoModalLabel">Request demo</h4>
+      </div>
+      <%= bootstrap_form_tag url: '/request_demo' do |f| %>
+      <div class="modal-body">
+        <%= f.text_field :name, label: 'Name' %>
+        <%= f.email_field :email, value: 'name@example.com' %>
+        <%= f.phone_field :phone %>
+        <%= f.text_field :agency, label: 'Agency or Organization' %>
+        <%= f.text_field :title %>
+        <%= f.text_area :comments %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <%= f.submit 'Save changes', class: 'btn btn-primary' %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
